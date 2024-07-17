@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirmação de presença</title>
+<style> 
+#LogoInicial{
+  border: 0px solid #ddd;
+  border-radius: 100px;
+  border-bottom: 100px;
+  padding: 1px;
+  width: 300px;
+  
+
+}
+.p1{
+  font-size: 65px;
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset{
+  border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo desfocado */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+        body {
+            background-image: url(plano\ de\ fundo\ para\ casamento.png);
+            background-color: #67061d;
+            background-size: contain;
+            padding: 6px;
+            text-align: center;
+            
+            
+        }
+
+        button {
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 12px;
+            cursor: pointer;
+            background-color: #f2dedb; 
+            color: black; 
+            border: 2px solid #67061d;
+        }
+
+        button:hover {
+            background-color: #67061d;
+            color: white;
+        }
+        div{
+          border-radius: 10px;
+        }
+        
+        #myForm {
+            max-width: 400px; /* Largura máxima do contêiner do formulário */
+            margin: 50px auto; /* Centralizar o contêiner na página */
+            background-color: #14131323; /* Cor de fundo do contêiner do formulário */
+            padding: 20px; /* Espaçamento interno dentro do contêiner do formulário */
+            border-radius: 10px; /* Borda arredondada do contêiner do formulário */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+            /* Adiciona desfoque ao fundo */
+            backdrop-filter: blur(10px);
+            /* Fallback para navegadores que não suportam backdrop-filter */
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+      </style>
+</head>
+<body>
+<br><br>
+<form id="Ian e Victor" action="https://api.sheetmonkey.io/form/dzXpxxYrQfJM2U8KEVY5hq" method="post">
+  <!-- Seus campos de formulário aqui -->
+
+
+<script>
+document.getElementById('Ian e Alice').addEventListener('submit', function(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+  
+  // Aqui você pode adicionar uma chamada AJAX para enviar os dados do formulário
+  // Por exemplo, usando o objeto FormData e a API Fetch:
+  var formData = new FormData(this);
+  
+  fetch(this.action, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      // Se o envio foi bem-sucedido, resete o formulário
+      this.reset();
+      // Ou redirecione a página para si mesma para recarregar
+      // window.location.href = window.location.href;
+      document.getElementById('confirmationPopup').style.display = 'flex';
+    } else {
+      // Trate erros de resposta aqui
+      alert('Ocorreu um erro ao enviar o formulário.');
+    }
+  })
+  .catch(error => {
+    // Trate erros de rede aqui
+    alert('Formulario enviado.');
+  });
+});
+</script>
+
+  
+  <h2>O nosso grande dia está chegando e precisamos da sua ajuda, por favor confirme sua presença até o dia 15/08</h2>
+  
+  <h1>Confirmação de presença
+  </H1>
+      <center>
+          <div style="border: 1px solid black; padding: 8px; margin: 8px;">
+              
+              <h2>Nos ajude a confirmar sua presença no nosso casamento</h2>
+              </div>
+          <br>
+          
+          <div style="border: 1px solid black; padding: 8px; margin: 8px;">
+                   
+        <div>
+          
+            <label for="nome">Nome Completo:</label>
+            <input type="" name="Nome do Convidado" required>
+            </div>
+      </center><br>
+
+        <fieldset>
+          <legend> Você confirma que estará presente em nosso casamento?</legend> 
+        <label for="confimação de Presença"></label>
+          <input type="radio" name="confimaçãoPresença" value="Sim" required>
+          <label for="confimaçãoPresença_sim">Sim</label>
+          <input type="radio" name="confimaçãoPresença" value="Não" required>
+          <label for="confimaçãoPresença_nao">Não</label>
+        </fieldset>
+        <p></p>
+        <fieldset>
+          <legend> presencial ou pelo zoom?</legend> 
+          <label for="Estilo de Presença"></label>
+          <input type="radio" name="modopresença" value="presencial" required>
+          <label for="modopresença_Presencial">Presencial</label>
+        <label for="Estilo de Presença"></label>
+          <input type="radio" name="modopresença" value="Zoom" required>
+          <label for="modopresença_Zoom">Zoom</label>
+          <label for="Estilo de Presença"></label>
+          <input type="radio" name="modopresença" value="Falharei" required>
+          <label for="modopresença_Faltarei">Não Poderei Participar</label>
+        </fieldset>
+        <p></p>
+        
+      
+      <br><br>
+
+
+  <button type="submit">Confirmar</button>
+
+</form>
+
+<p class="p1">Yan e Alice</p>
+
+</body>
+</html>
